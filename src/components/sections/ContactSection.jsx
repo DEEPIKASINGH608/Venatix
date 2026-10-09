@@ -36,7 +36,7 @@ export default function ContactSection() {
     <section id="contact" className="py-20 bg-ivory relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        {/* हेडिंग */}
+        {}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-maroon-900/10 text-maroon-900 text-sm font-bold mb-3 border border-maroon-900/20">
             <Sparkles className="w-4 h-4 text-gold-600" />
@@ -50,7 +50,7 @@ export default function ContactSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-start">
 
-          {/* जानकारी कार्ड (रॉयल मैरून थीम) */}
+          {}
           <div className="bg-maroon-950 text-white p-8 rounded-2xl border-2 border-gold-500/40 shadow-2xl flex flex-col justify-between">
             <div>
               <h3 className="text-2xl font-black text-gold-400 mb-6 border-b border-gold-500/20 pb-4">
@@ -112,7 +112,7 @@ export default function ContactSection() {
             </div>
           </div>
 
-          {/* फॉर्म सेक्शन */}
+          {}
           <div className="lg:col-span-2 bg-white p-8 sm:p-10 rounded-2xl shadow-2xl border-2 border-gold-500/30">
             <form onSubmit={handleSubmit} className="space-y-6">
 

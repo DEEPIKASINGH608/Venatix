@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import LightboxModal from '../ui/LightboxModal';
 
-// 100% वर्किंग इमेज URLs
 const galleryImages = [
   {
     id: 1,
@@ -62,14 +61,14 @@ export default function GallerySection() {
     <section id="gallery" className="py-20 bg-ivory">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        {/* हेडिंग */}
+        {}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-maroon-900 mb-3">हमारे आयोजनों की झलकियाँ</h2>
           <div className="w-20 h-1 bg-gold-500 mx-auto mb-3 rounded-full"></div>
           <p className="text-gray-700 font-medium">हमारी सजावट और व्यवस्थाओं की कुछ खूबसूरत तस्वीरें</p>
         </div>
 
-        {/* कैटेगरी फ़िल्टर बटन्स */}
+        {}
         <div className="flex flex-wrap items-center justify-center gap-2 mb-10">
           {categories.map(cat => (
             <button
@@ -86,7 +85,7 @@ export default function GallerySection() {
           ))}
         </div>
 
-        {/* इमेजेस ग्रिड */}
+        {}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredGallery.map((item, index) => (
             <div
@@ -112,7 +111,7 @@ export default function GallerySection() {
 
       </div>
 
-      {/* लाइटबॉक्स मोडल */}
+      {}
       {lightboxIndex !== null && (
         <LightboxModal
           images={filteredGallery}

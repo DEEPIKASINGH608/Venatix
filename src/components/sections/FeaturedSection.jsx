@@ -4,7 +4,6 @@ import { businessConfig } from '../../config/businessConfig';
 import { images } from '../../config/imageConfig';
 
 export default function FeaturedSection() {
-  // अगर imageConfig में लिंक न मिले तो डिफ़ॉल्ट शाही मंडप इमेज
   const stageImage = images.featuredStage || "https://images.pexels.com/photos/2291462/pexels-photo-2291462.jpeg?auto=compress&cs=tinysrgb&w=1200";
 
   return (
@@ -12,7 +11,6 @@ export default function FeaturedSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
-          {/* मंडप / स्टेज इमेज कंटेनर */}
           <div className="relative group">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-gold-500/40 bg-maroon-950 min-h-[400px]">
               <img
@@ -20,27 +18,27 @@ export default function FeaturedSection() {
                 alt="पारंपरिक विवाह मंडप संजावट"
                 className="w-full h-[400px] sm:h-[500px] object-cover transition-transform duration-700 group-hover:scale-105"
                 onError={(e) => {
-                  // इमेज लोड न होने पर फॉलबैक
+
                   e.target.onerror = null;
                   e.target.src = "https://images.pexels.com/photos/169198/pexels-photo-169198.jpeg?auto=compress&cs=tinysrgb&w=1200";
                 }}
               />
 
-              {/* बॉटम ओवरले टैग */}
+              {}
               <div className="absolute bottom-4 left-4 bg-maroon-950/80 backdrop-blur-md border border-gold-400/40 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-gold-300 shadow-lg flex items-center gap-2">
                 <Sparkles className="w-4 h-4 text-gold-400" />
                 पारंपरिक विवाह मंडप संजावट
               </div>
             </div>
 
-            {/* 100% संतुष्टि पॉप-अप बैज */}
+
             <div className="absolute -bottom-6 -right-2 sm:-right-6 bg-maroon-900 text-white p-5 sm:p-6 rounded-2xl shadow-2xl border border-gold-500/50 z-10 transition duration-300 group-hover:scale-105">
               <p className="text-2xl sm:text-3xl font-extrabold text-gold-400 mb-0.5">100%</p>
               <p className="text-xs sm:text-sm font-medium text-gray-200">संतुष्टि और विश्वसनीयता</p>
             </div>
           </div>
 
-          {/* कंटेंट सेक्शन */}
+          {}
           <div>
             <h2 className="text-3xl sm:text-5xl font-extrabold text-maroon-900 mb-6 leading-tight">
               शाही सजावट, <span className="bg-gradient-to-r from-gold-500 to-gold-600 bg-clip-text text-transparent">यादगार पल</span>
@@ -50,7 +48,7 @@ export default function FeaturedSection() {
               आपकी पसंद और आयोजन की आवश्यकता के अनुसार सुंदर सजावट एवं आकर्षक स्टेज की व्यवस्था। हम हर छोटे-बड़े अवसर को खास बनाने के लिए समर्पित हैं।
             </p>
 
-            {/* चेकपॉइंट्स */}
+            {}
             <ul className="space-y-4 mb-10">
               {[
                 "कस्टम मंडप और स्टेज थीम्स",
@@ -66,7 +64,7 @@ export default function FeaturedSection() {
               ))}
             </ul>
 
-            {/* व्हाट्सएप एक्शन बटन */}
+            {}
             <a
               href={`https://wa.me/${businessConfig.whatsapp}?text=${encodeURIComponent('नमस्ते, मुझे अपनी शादी की सजावट की योजना बनानी है।')}`}
               target="_blank"

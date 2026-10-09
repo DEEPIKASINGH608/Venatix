@@ -1,6 +1,6 @@
-// अपनी असली फ़ोटो यहाँ बदलें। यदि लिंक खाली छोड़ेंगे तो डिफ़ॉल्ट फोटो उपयोग होगी।
+
 export const images = {
-  logo: "", // खाली रहने पर स्वत्ः 👑 क्राउन आइकन प्रदर्शित होगा
+  logo: "", 
   hero: "https://images.pexels.com/photos/169198/pexels-photo-169198.jpeg?auto=compress&cs=tinysrgb&w=1600",
   weddingStage: "https://images.pexels.com/photos/2291462/pexels-photo-2291462.jpeg?auto=compress&cs=tinysrgb&w=1200",
   mandap: "https://images.pexels.com/photos/2291462/pexels-photo-2291462.jpeg?auto=compress&cs=tinysrgb&w=1200",

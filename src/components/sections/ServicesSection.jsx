@@ -76,7 +76,7 @@ export default function ServicesSection() {
     <section id="services" className="py-20 bg-ivory relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        {/* हेडिंग */}
+        {}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-maroon-900/10 text-maroon-900 text-sm font-bold mb-3 border border-maroon-900/20">
             <Sparkles className="w-4 h-4 text-gold-600" />
@@ -91,7 +91,7 @@ export default function ServicesSection() {
           </p>
         </div>
 
-        {/* 8 कार्ड्स का ग्रिड */}
+        {}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {servicesData.map((service) => (
             <div
@@ -128,7 +128,7 @@ export default function ServicesSection() {
                 </div>
               </div>
 
-              {/* डिटेल देखने के लिए लिंक और बटन्स */}
+              {}
               <div className="p-5 pt-0">
                 <button
                   onClick={(e) => { e.stopPropagation(); setSelectedService(service); }}
@@ -163,12 +163,12 @@ export default function ServicesSection() {
 
       </div>
 
-      {/* --- डिटेल पॉपअप / वेबपेज व्यू (Modal) --- */}
+      {}
       {selectedService && (
         <div className="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
           <div className="bg-white rounded-3xl max-w-2xl w-full overflow-hidden shadow-2xl border-4 border-gold-500/40 relative animate-in fade-in zoom-in duration-300 max-h-[90vh] flex flex-col">
 
-            {/* क्लोज बटन */}
+            {}
             <button
               onClick={() => setSelectedService(null)}
               className="absolute top-4 right-4 z-10 bg-maroon-950 text-gold-400 p-2 rounded-full hover:bg-maroon-900 transition shadow-lg"
@@ -176,7 +176,7 @@ export default function ServicesSection() {
               <X className="w-6 h-6" />
             </button>
 
-            {/* इमेज */}
+            {}
             <div className="relative h-64 sm:h-72 w-full">
               <img
                 src={selectedService.image}
@@ -189,7 +189,7 @@ export default function ServicesSection() {
               </h3>
             </div>
 
-            {/* विवरण */}
+            {}
             <div className="p-6 sm:p-8 overflow-y-auto space-y-6">
               <div>
                 <h4 className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-2">सेवा विवरण</h4>
@@ -210,7 +210,7 @@ export default function ServicesSection() {
                 </div>
               </div>
 
-              {/* बुकिंग और चैट एक्शन */}
+              {}
               <div className="pt-4 border-t border-gray-200 flex flex-col sm:flex-row gap-4">
                 <a
                   href={`https://wa.me/${businessConfig.whatsapp}?text=${encodeURIComponent(`नमस्ते, मुझे '${selectedService.title}' की बुकिंग के लिए जानकारी चाहिए।`)}`}

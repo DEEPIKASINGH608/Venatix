@@ -6,7 +6,7 @@ import { images } from '../../config/imageConfig';
 export default function HeroSection() {
   return (
     <section id="hero" className="relative min-h-[90vh] flex items-center justify-center bg-maroon-950 overflow-hidden">
-      {/* Background Image with Deep Maroon Vignette Overlay */}
+      {}
       <div className="absolute inset-0 z-0">
         <img
           src={images.hero}
@@ -19,13 +19,13 @@ export default function HeroSection() {
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 py-20 text-center text-white">
 
-        {/* Badge */}
+        {}
         <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-gold-500/15 border border-gold-400/40 text-gold-300 text-sm font-medium mb-8 backdrop-blur-md shadow-lg">
           <Sparkles className="w-4 h-4 text-gold-400" />
           आपके हर शुभ अवसर का भरोसेमंद साथी
         </div>
 
-        {/* Heading with Gold Gradient */}
+        {}
         <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 text-white leading-tight">
           आपके सपनों के समारोह को दें <br className="hidden sm:inline" />
           <span className="bg-gradient-to-r from-gold-300 via-gold-400 to-gold-500 bg-clip-text text-transparent drop-shadow-md">
@@ -33,12 +33,12 @@ export default function HeroSection() {
           </span>
         </h1>
 
-        {/* Subtitle */}
+        {}
         <p className="text-base sm:text-xl text-gray-200/90 max-w-3xl mx-auto mb-10 leading-relaxed font-light">
           शादी-विवाह से लेकर जन्मदिन और अन्य शुभ अवसरों तक, आकर्षक सजावट, शानदार मंडप और स्वादिष्ट कैटरिंग की संपूर्ण व्यवस्था।
         </p>
 
-        {/* Action Buttons */}
+        {}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href={`https://wa.me/${businessConfig.whatsapp}`}
@@ -59,7 +59,7 @@ export default function HeroSection() {
           </a>
         </div>
 
-        {/* Trust Badges */}
+        {}
         <div className="mt-14 pt-8 border-t border-gold-500/20 flex flex-wrap items-center justify-center gap-6 text-xs sm:text-sm text-gold-300/80 font-medium">
           <span className="flex items-center gap-2">✨ शानदार सजावट</span>
           <span className="hidden sm:inline text-gold-500/40">•</span>

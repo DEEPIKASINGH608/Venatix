@@ -19,7 +19,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
 
-          {/* Logo */}
+          {}
           <a href="#hero" className="flex items-center gap-3 group">
             {images.logo ? (
               <img src={images.logo} alt={businessConfig.name} className="h-12 w-auto" />
@@ -36,7 +36,7 @@ export default function Navbar() {
             </div>
           </a>
 
-          {/* Desktop Nav */}
+          {}
           <nav className="hidden md:flex space-x-8 items-center">
             {navLinks.map((link) => (
               <a
@@ -57,7 +57,7 @@ export default function Navbar() {
             </a>
           </nav>
 
-          {/* Mobile menu button */}
+          {}
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -69,7 +69,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Drawer */}
+      {}
       {isOpen && (
         <div className="md:hidden bg-maroon-950 border-b border-gold-500/30 px-4 pt-2 pb-6 space-y-3">
           {navLinks.map((link) => (
