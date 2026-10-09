@@ -1,8 +1,8 @@
 export const businessConfig = {
   name: "शिवा टेंट हाउस एंड कैटर्स",
   owner: "प्रो. सूरज सिंह",
-  phone: "9839114571",
-  whatsapp: "919839114571",
+  phone: import.meta.env.VITE_PHONE_NUMBER || "",
+  whatsapp: import.meta.env.VITE_WHATSAPP_NUMBER || "",
   address: "जोकवा बाजार, कुशीनगर, उत्तर प्रदेश, भारत",
   tagline: "आपके हर शुभ अवसर का भरोसेमंद साथी",
   services: [

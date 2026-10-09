@@ -1,0 +1,35 @@
+# Dependencies (इन फ़ोल्डर्स को GitHub पर नहीं भेजना चाहिए)
+node_modules/
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+
+# Production Build Output (बिल्ड किए गए फ़ोल्डर्स)
+/build
+/dist
+
+# Environment Variables (गोपनीय API Keys और प्राइवेट डेटा)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs and Debugging
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Editor & System Files (IDE और सिस्टम फ़ाइलें)
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
