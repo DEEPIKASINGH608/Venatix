@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+  }
+
+  body {
+    background-color: #FFF9EF;
+    color: #252525;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom animations & Utilities */
+.glass-effect {
+  background: rgba(7, 26, 70, 0.85);
+  backdrop-filter: blur(12px);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF9EF;
+}
+::-webkit-scrollbar-thumb {
+  background: #071A46;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7A1020;
+}
